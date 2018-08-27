@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <title> Registration Form </title>
+    </head>
+    <body>
+        <p> Registration From </p>
+
+        <form>
+            <table>
+
+                <tr>
+                   <td>User Name</td>
+                   <td><input type="text" name="name"></td>
+               </tr>
+
+               <tr>
+                   <td>Password</td>
+                   <td><input type="password" name="password"></td>
+               </tr>
+
+               <tr>
+                   <td>Confirm Password</td>
+                   <td><input type="password" name="confirmPassword"></td>
+               </tr>
+
+               <tr>
+                   <td rowspan="2">Gender</td>
+                   <td><input type="radio" name="gender" value="male">male</td>
+               </tr>
+
+               <tr>
+                   <td> <input type="radio" name="gender" value="female"> female</td>
+               </tr>
+
+               <tr>
+                   <td id="info" colspan="2">Interests</td>
+               </tr>
+
+               <tr>
+                   <td class="t" colspan="2">
+                       <table style="width:100%">
+                           <tr>
+                               <td> <input name="interest" value="sport" type="checkbox"> </td>
+                               <td> sport </td>
+                               <td> <input name="interest" value="running" type="checkbox"> </td>
+                               <td> runing </td>
+                           </tr>
+                           <tr>
+                               <td> <input name="interest" value="reading" type="checkbox"> </td>
+                               <td> Reading </td>
+                               <td> <input name="interest" value="swimming" type="checkbox"></td>
+                               <td> swimming </td>
+                           </tr>
+                       </table>
+                   </td>
+               </tr>
+
+               <tr>
+                   <td>
+                       Country
+                   </td>
+                   <td>
+                       <select name="country">
+                           <option>Egypt</option>
+                           <option>France</option>
+                       </select>
+                   </td>
+               </tr>
+
+               <tr>
+                   <td id="info" colspan="2" > Comments </td>
+               </tr>
+
+
+               <tr>
+                   <td id="area" colspan="2">
+                       <textarea name="comment"> </textarea>
+                   </td>
+               </tr>
+
+               <tr>
+                   <td class="req" colspan="2">
+                       <input type="submit" value="Register" >
+                       <input type="reset" value="clear">
+                   </td>
+               </tr>
+            </table>
+        </form>
+    </body>
+
+</html>

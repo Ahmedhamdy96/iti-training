@@ -1,0 +1,35 @@
+body
+{
+    color: blue ;
+}
+
+p
+{
+    text-align: center;
+}
+
+table , td
+{
+    margin-left: auto ;
+    margin-right: auto ;
+
+    border: black solid 2px ;
+    background-color: antiquewhite;
+
+}
+
+
+td#info
+{
+    text-align: center ;
+}
+
+td#area
+{
+    text-align: center;
+}
+
+td.req
+{
+    text-align: center;
+}

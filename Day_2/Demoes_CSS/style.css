@@ -1,0 +1,48 @@
+p
+{
+    color: red;
+}
+
+body
+{
+    background-color:lightgray; 
+}
+
+ol{
+    color:green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px
+}
+
+
+table,td
+{
+    border:solid 3px green;
+}
+
+img{
+    width:200px;
+    height: 200px;
+}
+
+#list1
+{
+    background-color: lavenderblush;
+}
+
+.a
+{
+    color:red;
+}
+.b
+{
+    background-color: lawngreen;
+}
+
+input[type=text][value*=age]{
+    background-color: indianred;
+}
+
+div>p{
+    background-color: green;
+}
