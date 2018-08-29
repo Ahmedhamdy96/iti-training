@@ -1,5 +1,5 @@
 // creating a string object for testing
-myString = new String("MY NAME IS ahmed");
+//myString = new String("MY NAME IS ahmed");
 
 /*
     Javascript Day [1] Assignment [1]
@@ -10,15 +10,15 @@ myString = new String("MY NAME IS ahmed");
 function changeCase(stringg)
 {
     var result = "" ;
-    for( i=0 ; i<myString.length ; i++)
+    for( i=0 ; i<stringg.length ; i++)
     {
-        if(myString[i] == myString[i].toLowerCase())
+        if(stringg[i] == stringg[i].toLowerCase())
         {
-            result = result + myString[i].toUpperCase();
+            result = result + stringg[i].toUpperCase();
         }
         else
         {
-            result = result + myString[i].toLowerCase();
+            result = result + stringg[i].toLowerCase();
         }
     }
     return result ;
@@ -74,7 +74,7 @@ function checkEmail(email)
             result =  "invalid email address ";
             return result ;
         }
-        else if(DOT_index>AT_index)
+        else if(DOT_index>AT_index && DOT_index<email.length-1)
         {
             result =  "valid email address"
             return result ;
