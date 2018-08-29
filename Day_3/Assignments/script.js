@@ -82,3 +82,24 @@ function checkEmail(email)
     }
 
 }
+
+/*
+    Javascript Day [1] Assignment [ BONUS (2)-(b) ]
+    --------------------------------------------------
+    -> write a JavaScript Function that check the user email address using Regular Expressions
+*/
+
+function checkMailReg(email)
+{
+    var regX = /\w+@\w+\.+[a-z]/g ; // \w not space
+    var flag = regX.test(email) ;
+
+    if(flag == true )
+    {
+        return "Valid Email Address :) " ;
+    }
+    else
+    {
+        return "Invalid Email Address :( " ;
+    }
+}
