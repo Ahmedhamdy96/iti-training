@@ -1,0 +1,25 @@
+<html>
+<body>
+<script>
+/*function s()
+{
+ g=setInterval("ss()",500)
+}*/
+i=100
+function ss()
+{       
+         i-=20
+	if(i>=0)
+	{
+	  document.getElementById("1").style.filter="alpha(opacity="+i+")"
+          	
+	}
+        	
+	
+}
+</script>
+<img src="2.jpg"  width="200" hight="200" id="1" width="400" height="400" border="4"/>
+<input type="button" value="click here " id="2" onClick="setInterval('ss()',500)">
+
+</body>
+</html>

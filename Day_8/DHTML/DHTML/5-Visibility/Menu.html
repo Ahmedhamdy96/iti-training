@@ -1,0 +1,45 @@
+<title>
+--- Sample Menu ---
+</title>
+<script>
+function show()
+{
+	document.getElementById('ITEMS').style.display="block";
+}
+function hide()
+{
+	document.getElementById('ITEMS').style.display='none';
+}
+</script>
+<div id="MENU"  style="position:relative; width:80px; text-align:center;background-color:#DC60FF; color:#49FFFF; cursor:hand"
+    onmouseover="show()"
+    onmouseout="hide()">
+       Menu
+</div>
+
+<div id="ITEMS" style="display:none; width:80px; text-align:center; cursor:hand"
+  onmouseover="show()"
+  onmouseout="hide()">
+	
+  <div id="M1" style="background-color:#DEBF00"
+    onmouseover="this.style.backgroundColor='#9D4602'"
+    onmouseout="this.style.backgroundColor='#DEBF00'"
+    onclick="location='url'">
+      Menu Item 1
+  </div>
+  <div id="M2" style="background-color:#DEBF00"
+    onmouseover="M2.style.backgroundColor='#9D4602'"
+    onmouseout="M2.style.backgroundColor='#DEBF00'"
+    onclick="location='url'">
+      Menu Item 2
+  </div>
+  <div id="M3" style="background-color:#DEBF00"
+    onmouseover="this.style.backgroundColor='#9D4602'"
+    onmouseout="this.style.backgroundColor='#DEBF00'"
+    onclick="location='url'">
+      Menu Item 3
+  </div>
+
+</div>
+
+<p>Other page content...</p>

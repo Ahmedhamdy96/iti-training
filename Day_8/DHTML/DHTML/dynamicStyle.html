@@ -1,0 +1,58 @@
+<html>
+<head>
+<script>
+function ChangeStyle(sty)
+{
+    document.getElementById('d').style.fontFamily=sty;
+}
+
+function ChangeSize(s)
+{
+    document.getElementById('d').style.fontSize=s;
+}
+
+function Changa(x)
+{
+    document.getElementById('d').style.textAlign=x;
+}
+</script>
+</head>
+<body>
+<p id="d" style="font-family:Verdana;font-size:12px;text-align:left">
+This is the Div tag that contains the paragraph body
+thank you very much :)
+</p>
+
+<br />
+<table border="5">
+<tr>
+<td>
+<b>font Style</b><br/>
+<input type="radio" name="Style" onclick="ChangeStyle('Arial')" />Arial<br/>
+<input type="radio" name="Style" onclick="ChangeStyle('Verdana')" checked/>Verdana<br/>
+<input type="radio" name="Style" onclick="ChangeStyle('Monotype Corsiva')"/>Monotype Corsiva<br/>
+<input type="radio" name="Style" onclick="ChangeStyle('Algerian')"/>Algerian<br/>
+ 
+  </td>
+  <td>
+<b>font Size</b><br/>
+<input type="radio" name="Size" onclick="ChangeSize('12px')"checked />12px<br/>
+<input type="radio" name="Size" onclick="ChangeSize('16px')" />16px<br/>
+<input type="radio" name="Size" onclick="ChangeSize('18px')"/>18px<br/>
+<input type="radio" name="Size" onclick="ChangeSize('20px')"/>20px<br/>
+ 
+  </td>
+  
+  <td>
+<b>allignment styles</b><br/>
+<input type="radio" name="al" onclick="Changa('right')" />right<br/>
+<input type="radio" name="al" onclick="Changa('left')" checked/>left<br/>
+<input type="radio" name="al" onclick="Changa('center')"/>center<br/>
+ 
+  </td>	
+  
+</table>
+
+
+</body>
+</html>

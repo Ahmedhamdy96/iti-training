@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+function Switch()
+{
+    var c=document.getElementById('d').style.color;
+    if(c=="Brown")
+    {
+      document.getElementById('d').style.color="Silver";
+     document.getElementById('d').style.backgroundColor="Brown";
+    }
+    else if(c=="Silver")
+    {
+        document.getElementById('d').style.color="Brown";
+     document.getElementById('d').style.backgroundColor="Silver";
+    }
+
+
+}
+
+</script>
+</head>
+<body>
+<div id="d" style="font-size:80px;text-align:center;border:solid 5 red;background-color:Silver;color:Brown">
+This is the Div tag that contains the paragraph body
+thank you very much :)
+</div>
+
+<br />
+
+<input type ="button" value="change" onclick="Switch()" />
+</body>
+</html>

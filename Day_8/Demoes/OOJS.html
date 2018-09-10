@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <script>
+        
+        // arr=[] === new Array()
+
+        var obj={}; //===    obj=new Object();
+
+        var book={
+            title:"JS",
+            "main title":"ES5",
+            edition:2,
+            author:{ firstName:"eman",lastName:"fathi"},
+            borrow:function(name){
+                console.log(name+" boroowing "+book.title);
+            }
+        }
+
+        //calling
+
+        //adding
+
+        //deleting
+
+
+
+
+
+    //for in
+    for(key in book)  //array --i-->index
+    {
+        //console.log(book[key])
+    }
+
+
+        // function name(){}
+        // var funName=function(){}
+
+
+x=2;y=4;
+x=y;
+
+    var anotherBook=book;
+
+//class
+
+function Student(_id,_name)
+{
+    var id=_id;
+    this.name=_name;
+
+    //setter and getter
+    this.getId=function(){ return id}
+    this.setId=function(ID){ id=ID}
+
+    this.print=function(){
+        console.log(id,this.name);
+    }
+}
+
+student=new Student(1,"eman");
+
+
+
+
+
+
+
+
+
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>

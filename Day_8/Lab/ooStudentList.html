@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        table td
+        {
+            border:groove darkblue 1px;
+        }
+        .fail
+        {
+            background-color:lightgrey;
+        }
+        .success
+        {
+            background-color: aqua;
+        }
+		form
+		{
+			padding:20px;
+		}
+		
+		span{
+		color:green;   /* change color to be green */
+		visibility:hidden;
+		}
+		table:first tr
+		{
+			width:400px;
+			
+		}
+    </style>
+    <!--<script src="studentJs.js"></script>-->
+    <script src="newStudentjsLab.js"></script>
+</head>
+
+<body>
+    <form name="studentForm" >
+    <table style="width:40%;border:groove pink 3px;font-size:large;font-family:'Monotype Corsiva';color:purple">
+     
+        <tr><td>name</td><td><input name="nameTxt" type="text" /><span id="namespan">name should be string</span></td></tr>
+       
+        <tr><td>e-mail</td><td><input name="emailTxt" type="text" /><span id="emailspan">email is not correct</span></td></tr>
+        <tr><td>deptartment</td><td><select name="deptDrop"><option>SD</option><option>OS</option><option>E-Learning</option></select></td></tr>
+        <tr><td>grade</td><td><input name="gradeTxt" type="text" /><span id="gradespan">grade should be number (0:100)</span></td></tr>
+        <tr><td colspan="2"><input id="Button1" type="button" value="Add" /><span id="addspan">test</span></td></tr>
+        <tr><td colspan="2"><input id="Button2" type="button" value="ShowData" /></td></tr>
+       
+    </table>
+</form>
+
+    <table style="visibility:hidden;border: groove darkblue 3px; font-size: x-large; font-family: 'Monotype Corsiva'; color: blue">
+	<tr><td>Name</td><td>Email</td><td>Department</td><td>Grade</td></tr>
+    </table>
+    <div id="container"></div>
+</body>
+</html>
