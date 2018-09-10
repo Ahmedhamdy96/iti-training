@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <link href="style.css" rel="stylesheet" />
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $("document").ready(function () {
+
+            //each
+
+            $("ul li").each((index,elm)=>{
+                //console.log(index, elm);
+                console.log($(elm).text());
+            });
+
+
+            //Children();
+            //$("#example").children().css("border","2px dotted orange");
+            //$("#example").children("div").css("border","2px dotted orange");
+
+
+            elm = $("#para1");
+            //next only get next element 
+            //elm.next().css("border","2px dotted orange");
+            //elm.next("div").css("border","2px dotted orange");
+            //elm.nextAll().css("border","2px dotted orange");
+            //elm.nextAll("div").css("border","2px dotted orange");
+            //elm.prev().css("border","2px dotted orange");
+            //elm.parent().css("border","2px dotted orange");
+            //elm.parents().css("border","2px dotted orange");
+            //elm.parentsUntil($("HTML")).css("border","2px dotted orange");
+            //siblings
+
+
+            //$("li").eq(1).css("color","green")
+            //****************************************** first , last
+            //$("ul li").first().css("color","green")
+            //$("ul li").last().css("color","green")
+            //****************************************** is(selector)
+
+            //$("#example").last().is("div")
+            //$("li").first().is(":contains('the')")
+
+            //****************************************** filter
+            //$().filter(selector) work in the item itself not it's children
+            //$("li").filter(":even").css("background-color","yellow");
+            //$("li").filter(":first-child").css("color","green")
+            //$("#example").filter($("p")).hide(3000) won't work because p is child
+            //$("#example").children().filter("p").hide(3000);
+
+            //$("div").filter("#example").css("border-color","yellow")
+            //$(":checkbox").filter(":checked");
+            //$(":radio[name='gender']").filter(":checked").val()
+
+            
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Using jQuery Document Traversal Features</h1>
+        <p>The DOM of a Web page is organized as a tree structure. The elements in the page have family-like names to refer to their positions relative to other elements.</p>
+        <p>For example, the HEAD and BODY tags are "children" of the HTML tag, and are "siblings" of each other. They have the HTML tag as their "parent". jQuery provides functions for navigating the document tree and processing sets of elements, such as:</p>
+        <ul id="list1">
+            <li>children(): Retrieves all the child elements of the matched elements, except text nodes</li>
+            <li>prev(), next(), parent(): used to traverse the family relationships of an element</li>
+            <li>find(): search within a given element to find elements that match a selector expression</li>
+            <li>each(): loops over a set of matched elements and calls a function for each one</li>
+        </ul>
+
+        <div id="example">
+            <p class="a">This is paragraph 1</p>
+            <p id="para1">This is paragraph 2</p>
+            <p class="b">This is paragraph 3</p>
+            <p id="para4">This is paragraph 4</p>
+            <p id="para5">This is paragraph 5</p>
+            <div> This is div 1 </div>
+            <div> This is div 2 </div>
+        </div>
+        <img src="images/1.jpg" />
+        <img src="images/2.jpg" />
+
+        <h3> HTML Table 1</h3>
+        <table>
+            <tr><td>Cell 1 </td><td> Cell 2</td> </tr>
+            <tr><td>Cell 3 </td><td> Cell 4</td> </tr>
+            <tr><td>Cell 5 </td><td> Cell 6</td> </tr>
+        </table>
+        <form>
+            <fieldset>
+
+                <legend> Filters Form </legend>
+
+                <input type="text" value="Type your name here" />
+                <br />
+                <input type="text" value="Type your age" />
+                <br/>
+                Gender  <input name="gender" type="radio" value="Male"checked />Male
+                <br/>  <input name="gender" type="radio"  value="Female"/>Female
+                
+                <br />
+                Agree  <input name="Agree" type="checkbox" checked />
+                <input type="button" value="send" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

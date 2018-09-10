@@ -1,0 +1,73 @@
+<html>
+
+    <head>
+        <script src="jquery-3.3.1.js"></script>
+        <script>
+            
+            // use of CSS function for color as a getter will return color in RGB
+            // then use html() method 
+
+
+            //==========================================================================
+            
+            
+            $(function(){
+                
+                            // check the clicked div then change the span color to this div's background color 
+                            $("div").on("click",function(){
+            
+                                $("span").html("<span> the color is : "  +$(this).css("background-color") + "</span>").css("color" , $(this).css("background-color"));
+            
+                                }) ;   // changing the inner html of the span == re-creation  
+
+
+                
+            }); // loading 
+            
+            
+            
+            //==========================================================================
+            
+            
+            
+
+    
+
+        </script>
+        <style> 
+
+                      div
+                        {
+                            width:60px; height:60px; margin:5px; float:left;
+                        }
+                        .box
+                        {
+                            border: 1px solid gray;
+                            background-color: #b3c8d0;
+                            font-size:14pt;
+                            padding-left: 10pt;
+                            padding-right: 10pt;
+                            min-height: 200px;
+                            width: 300px;
+                            float:none;
+                            margin-top:70px;
+                        }
+        </style>
+
+    </head>
+    <body>
+
+        <!--  <span id="result">&nbsp;</span>   -->
+        <span>my name is ahmed </span>
+          
+          <div style="background-color:blue;"></div>
+          <div style="background-color:rgb(15,99,30);"></div>
+          <div style="background-color:pink;"></div>
+          <div style="background-color:#f11;"></div>
+
+        
+        
+        
+    </body>
+
+</html>

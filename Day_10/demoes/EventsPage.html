@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+   
+    <link href="style.css" rel="stylesheet" />
+    <style>
+            .divBackground
+            {
+                background-color: yellow;
+            }
+    
+    
+    </style>
+    <script src="jquery-3.3.1.js"></script>
+    
+    <script>
+    
+                // $(document).ready(()=>{
+
+                //     alert("Load");
+
+
+
+                // });
+
+                // $(function(){
+
+                //     alert("Laod2");
+
+                // });
+
+
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+            //load
+           
+
+            //1- find some HTML elments  $(" CSS Selectors")
+
+            // 2- load $(function(){})
+            $(()=>{
+                
+                
+                //binding --> on , undind --> off
+               
+                // $("li").on("click",function(){
+
+                //     //console.log(this);
+                //     //alert($(this).text());
+                //     let oldValue=$(this).text();  //get
+                //     $(this).text(oldValue+" Clicked!");
+                //    /// $(this).off("click");
+
+                // });//click li
+
+                //$("li:last").off("click")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //delegation
+
+                  $("ul").on("click","li",function(){
+
+                   
+                    let oldValue=$(this).text();  //get
+                    $(this).text(oldValue+" Clicked!");
+                   
+
+                    });//click li
+               
+                let liElement=document.createElement("li");
+                liElement.innerText="new Item";
+                document.getElementsByTagName("ul")[0].appendChild(liElement);
+           
+
+
+
+
+                //div element
+
+
+                //Bind more than one event on the same object 
+                //each with it's own handler
+                // $("div:last").on("mouseover",function(){
+
+                //     $(this).css("background-color","pink");
+
+
+                // });//mouseover
+                // $("div:last").on("mouseout",function(){
+
+                //     $(this).css("background-color","gray");
+
+
+                // });//mouseout
+
+            //  $("div:last").on("mousemove",function(event){
+
+                   
+            //       $(this).text(` ${event.pageX} : ${event.pageY}`);
+
+            //  });//mousemove
+
+
+
+
+
+
+
+
+
+
+
+
+               
+                //bind more than one event with the same handler
+
+                // $("div:last").on("mouseover mouseout",function(){
+
+
+                //     $(this).toggleClass("divBack");
+                //     // if($(this).hasClass("divBack"))
+                //     // {
+                //     //    $(this).removeClass("divBack"); 
+                        
+                //     // }else
+                //     // {
+                //     //    $(this).addClass("divBack"); 
+                //     // }
+
+                // });//mosueover , mouseot
+
+
+
+
+
+
+
+
+
+
+
+               
+             //bind more than one event each with handler on the same method
+
+            $("div:last").on({
+                "mouseover mouseout":function(){ $(this).toggleClass("divBack");},
+                "mousemove":function(){$(this).text(` ${event.pageX} : ${event.pageY}`);  },
+                "click":function(){alert('heelow')}
+            });//all events
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+            //short cut
+            //$("#evtTarget").click(function(){});// no delegation
+
+
+
+
+            });//load --> document,window
+    </script>
+
+  
+  
+</head>
+<body>
+    <div id="container">
+        <h1>Using Event Helpers</h1>
+        <p>Some types of events are fairly common, and jQuery provides shorthand helper functions to make your code a little easier to write and read. Some examples:</p>
+        <ul>
+            <li>click</li>
+            <li>mouseover</li>
+            <li>mouseout</li>
+            <li>hover</li>
+        </ul>
+       
+        <div id="evtTarget" class="box">Mouse click this div to see the mouse position. Try clicking and double-clicking.
+        
+        </div>
+        <img src="images/1.jpg" style="border:red solid 3px;width:300px " />
+        <img src="images/2.jpg"/>
+
+        <h3> HTML Table 1</h3>
+        <table>
+            <tr><td>Cell 1 </td><td> Cell 2</td> </tr>
+            <tr><td>Cell 3 </td><td> Cell 4</td> </tr>
+            <tr><td>Cell 5 </td><td> Cell 6</td> </tr>
+        </table>
+        <h3> HTML Table 2</h3>
+        <table>
+            <tr><td><a href="http://www.iti.gov.eg"> ITI </a> </td><td> Cell 2</td> </tr>
+            <tr><td><a href="http://www.google.com"> google </a> </td><td> Cell 4</td> </tr>
+            <tr><td><a href="next.html"> MyPage </a> </td><td> Cell 6</td> </tr>
+        </table>
+
+        <h3> HTML Form </h3>
+        <form action="http://www.google.com">
+            <fieldset>
+
+                <legend> Filters Form </legend>
+
+                <input type="text" value="Type your name here" />
+                <br />
+                <input type="text" value="Type your age" />
+                <br />
+                Gender : <input type="checkbox" value="ok" checked>Agree</input>
+                <input type="submit" value="send" />
+            </fieldset>
+        </form>
+        <br />
+        <br />
+        <br />
+    </div>
+</body>
+</html>

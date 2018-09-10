@@ -1,0 +1,107 @@
+<html>
+<head>
+
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+		//don't write any javascript code here 
+		//looks for slide methods in devdocs
+		//all will be written in on click of buttons 
+
+        
+    
+        // ================================================================================================
+    $(function(){
+        
+        // > Arrow 
+        
+        
+        
+        $("input").eq(0).on("click" ,function(){
+            
+            
+            $("div").css("left" , "-=5") ;  
+        
+        }) ; //  <<<<  
+        
+        
+        $("input").eq(1).on("click" ,function(){
+            
+            
+            $("div").css("left" , "+=5") ;  
+        
+        }) ; //  >>>>  
+        
+        
+        $("input").eq(2).on("click" ,function(){
+            
+            $("div").slideUp() ; 
+        
+        }) ; // sliding up 
+        
+        
+        
+        $("input").eq(3).on("click" , function(){
+             
+            $("div").slideDown(); 
+            
+            
+        });  // sliding down  
+        
+        
+        $("input").eq(4).on("click" , function(){
+            
+            $("div").slideToggle();
+            
+            
+        }) ; // slide toggle 
+        
+        // alert("welcome ") ; 
+    });// Loading 
+
+    
+     // ======================================================================================================
+    
+    
+    
+    
+    </script>
+<style> 
+ 
+    div { background:#de9a44; margin:3px; width:200px; 
+        height:200px; float:left; position: absolute ; }
+  
+
+  
+</style>
+
+</head>
+<body>
+ 
+
+ 
+<br/>
+<br/>
+<br/>
+<input type="button" value="<" />
+<input type="button" value=">" />
+<br/>
+<br/>
+<br/>
+<input type="button" value="slideUp"  />
+<input type="button" value="slideDown" />
+<input type="button" value="slideToggel" />
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+  <div style="background-color:blue;"></div>
+  
+  <br/>
+ 
+
+
+</body>
+
+</html>
